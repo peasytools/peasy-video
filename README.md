@@ -8,7 +8,7 @@ Python video toolkit -- 13 operations for trimming, resizing, rotating, speed ad
 
 Built for [peasyvideo.com](https://peasyvideo.com), which offers free interactive tools for video trimming, resizing, format conversion, thumbnail extraction, and GIF creation. The site serves as the reference implementation and hosts the REST API, glossary, and developer guides that complement this library.
 
-> **Try the interactive tools at [peasyvideo.com](https://peasyvideo.com)** -- [Trim Video](https://peasyvideo.com/tools/trim-video/), [Resize Video](https://peasyvideo.com/tools/resize-video/), [Extract Audio](https://peasyvideo.com/tools/extract-audio/), [Video to GIF](https://peasyvideo.com/tools/video-to-gif/), [Video Thumbnails](https://peasyvideo.com/tools/video-thumbnails/)
+> **Try the interactive tools at [peasyvideo.com](https://peasyvideo.com)** -- video trimming, resizing, audio extraction, GIF conversion, and thumbnail generation.
 
 <p align="center">
   <img src="demo.gif" alt="peasy-video demo — video operations and dataclass fields in Python REPL" width="800">
@@ -121,7 +121,7 @@ for i, f in enumerate(frames):
         fp.write(f.data)
 ```
 
-Learn more: [Video Thumbnails Tool](https://peasyvideo.com/tools/video-thumbnails/) · [Video Info Tool](https://peasyvideo.com/tools/video-info/) · [What is Frame Rate?](https://peasyvideo.com/glossary/frame-rate/)
+Learn more: [PeasyVideo](https://peasyvideo.com) · [Video Glossary](https://peasyvideo.com/glossary/)
 
 ### Trimming and Concatenation
 
@@ -150,7 +150,7 @@ trim("lecture.mp4", "body.mp4", start=120)
 concatenate(["intro.mp4", "main.mp4", "outro.mp4"], "final.mp4")
 ```
 
-Learn more: [Trim Video Tool](https://peasyvideo.com/tools/trim-video/) · [Concatenate Video Tool](https://peasyvideo.com/tools/concat-video/) · [What is Video Trimming?](https://peasyvideo.com/glossary/trim/)
+Learn more: [PeasyVideo](https://peasyvideo.com) · [Developer Docs](https://peasyvideo.com/developers/)
 
 ### Resize and Transform
 
@@ -191,7 +191,7 @@ reverse_video("jump.mp4", "boomerang.mp4")
 strip_audio("ambient.mp4", "silent_loop.mp4")
 ```
 
-Learn more: [Resize Video Tool](https://peasyvideo.com/tools/resize-video/) · [Speed Video Tool](https://peasyvideo.com/tools/speed-video/) · [What is Video Resolution?](https://peasyvideo.com/glossary/resolution/)
+Learn more: [PeasyVideo](https://peasyvideo.com) · [Video Glossary](https://peasyvideo.com/glossary/)
 
 ### Audio Extraction
 
@@ -220,7 +220,7 @@ extract_audio("keynote.mp4", "keynote.aac", format="aac")
 extract_audio("tutorial.mp4", "tutorial.ogg", format="ogg")
 ```
 
-Learn more: [Extract Audio Tool](https://peasyvideo.com/tools/extract-audio/) · [MP3 vs WAV vs AAC](https://peasyvideo.com/guides/audio-formats/) · [What is Audio Extraction?](https://peasyvideo.com/glossary/audio-extraction/)
+Learn more: [PeasyVideo](https://peasyvideo.com) · [OpenAPI Spec](https://peasyvideo.com/api/openapi.json)
 
 ### GIF Conversion
 
@@ -251,7 +251,7 @@ video_to_gif("product.mp4", "product.gif", fps=15)
 gif_to_video("animation.gif", "animation.mp4", fps=24)
 ```
 
-Learn more: [Video to GIF Tool](https://peasyvideo.com/tools/video-to-gif/) · [GIF to Video Tool](https://peasyvideo.com/tools/gif-to-video/) · [What is GIF?](https://peasyvideo.com/glossary/gif/)
+Learn more: [PeasyVideo](https://peasyvideo.com) · [Developer Docs](https://peasyvideo.com/developers/)
 
 ## Understanding Video Codecs and Containers
 
@@ -271,7 +271,7 @@ A codec (coder-decoder) compresses raw video frames into a compact binary stream
 
 H.264 remains the safest choice for maximum compatibility. It plays on virtually every device, browser, and platform manufactured in the last 15 years. H.265 offers significantly better compression (roughly half the bitrate for equivalent quality) but has licensing complexities and narrower browser support. VP9 and AV1 are royalty-free alternatives -- VP9 is widely supported through Chrome and YouTube, while AV1 is the newest codec with the best compression ratios but requires newer hardware for real-time decoding.
 
-Learn more: [Video Codecs Guide](https://peasyvideo.com/guides/video-codecs/) · [What is H.264?](https://peasyvideo.com/glossary/h264/) · [H.264 vs H.265 Comparison](https://peasyvideo.com/guides/h264-vs-h265/)
+Learn more: [PeasyVideo](https://peasyvideo.com) · [Video Glossary](https://peasyvideo.com/glossary/)
 
 ### Container Formats
 
@@ -288,7 +288,7 @@ A container format is the file format that packages video streams, audio streams
 
 MP4 with H.264 video and AAC audio is the most universally compatible combination. When moviepy writes a video file with a `.mp4` extension, it uses this combination by default through FFmpeg.
 
-Learn more: [Container Formats Guide](https://peasyvideo.com/guides/container-formats/) · [MP4 vs WebM](https://peasyvideo.com/guides/mp4-vs-webm/) · [What is a Container Format?](https://peasyvideo.com/glossary/container-format/)
+Learn more: [PeasyVideo](https://peasyvideo.com) · [Developer Docs](https://peasyvideo.com/developers/)
 
 ### Resolution Standards
 
@@ -306,7 +306,7 @@ Video resolution defines the pixel dimensions of each frame. Higher resolution m
 
 The "p" in 720p/1080p stands for "progressive scan" (every frame is a full image), as opposed to the older interlaced scan (1080i) used in broadcast television.
 
-Learn more: [Resolution Guide](https://peasyvideo.com/guides/video-resolution/) · [4K vs 1080p Comparison](https://peasyvideo.com/guides/4k-vs-1080p/) · [What is Resolution?](https://peasyvideo.com/glossary/resolution/)
+Learn more: [PeasyVideo](https://peasyvideo.com) · [Video Glossary](https://peasyvideo.com/glossary/)
 
 ### Frame Rates
 
@@ -325,7 +325,7 @@ Frame rate (frames per second, fps) determines how many individual images are di
 
 When using `video_to_gif()`, reducing the fps from 30 to 10-12 dramatically shrinks GIF file sizes while maintaining acceptable visual quality for most use cases.
 
-Learn more: [Frame Rate Guide](https://peasyvideo.com/guides/frame-rates/) · [24 vs 30 vs 60 fps](https://peasyvideo.com/guides/24-vs-30-vs-60-fps/) · [What is Frame Rate?](https://peasyvideo.com/glossary/frame-rate/)
+Learn more: [PeasyVideo](https://peasyvideo.com) · [OpenAPI Spec](https://peasyvideo.com/api/openapi.json)
 
 ### Aspect Ratios
 
@@ -342,7 +342,7 @@ Aspect ratio is the proportional relationship between a video's width and height
 
 When resizing with `resize()`, specifying only `width` or only `height` preserves the original aspect ratio automatically. Specifying both forces exact dimensions, which may stretch the video if the aspect ratio differs.
 
-Learn more: [Aspect Ratio Guide](https://peasyvideo.com/guides/aspect-ratios/) · [Social Media Video Sizes](https://peasyvideo.com/guides/social-media-video-sizes/) · [What is Aspect Ratio?](https://peasyvideo.com/glossary/aspect-ratio/)
+Learn more: [PeasyVideo](https://peasyvideo.com) · [Developer Docs](https://peasyvideo.com/developers/)
 
 ## Command-Line Interface
 
@@ -452,9 +452,8 @@ Available video tools: `video_info`, `video_trim`, `video_resize`, `video_extrac
 
 ## Learn More About Video Processing
 
-- **Tools**: [Trim Video](https://peasyvideo.com/tools/trim-video/) · [Resize Video](https://peasyvideo.com/tools/resize-video/) · [Extract Audio](https://peasyvideo.com/tools/extract-audio/) · [Video to GIF](https://peasyvideo.com/tools/video-to-gif/) · [Video Thumbnails](https://peasyvideo.com/tools/video-thumbnails/)
-- **Guides**: [Video Codecs Guide](https://peasyvideo.com/guides/video-codecs/) · [Container Formats](https://peasyvideo.com/guides/container-formats/) · [H.264 vs H.265](https://peasyvideo.com/guides/h264-vs-h265/) · [4K vs 1080p](https://peasyvideo.com/guides/4k-vs-1080p/) · [Frame Rate Guide](https://peasyvideo.com/guides/frame-rates/)
-- **Glossary**: [Resolution](https://peasyvideo.com/glossary/resolution/) · [Frame Rate](https://peasyvideo.com/glossary/frame-rate/) · [H.264](https://peasyvideo.com/glossary/h264/) · [Container Format](https://peasyvideo.com/glossary/container-format/) · [Aspect Ratio](https://peasyvideo.com/glossary/aspect-ratio/) · [GIF](https://peasyvideo.com/glossary/gif/)
+- **Home**: [PeasyVideo](https://peasyvideo.com)
+- **Reference**: [Video Glossary](https://peasyvideo.com/glossary/)
 - **API**: [REST API Docs](https://peasyvideo.com/developers/) · [OpenAPI Spec](https://peasyvideo.com/api/openapi.json)
 
 ## Also Available
@@ -472,8 +471,8 @@ Part of the [Peasy Tools](https://peasytools.com) open-source developer tools ec
 | peasy-image | [PyPI](https://pypi.org/project/peasy-image/) | [npm](https://www.npmjs.com/package/peasy-image) | 21 image operations: resize, crop, compress, convert, watermark -- [peasyimage.com](https://peasyimage.com) |
 | peasy-pdf | [PyPI](https://pypi.org/project/peasy-pdf/) | [npm](https://www.npmjs.com/package/peasy-pdf) | PDF merge, split, rotate, compress, extract, encrypt -- [peasypdf.com](https://peasypdf.com) |
 | peasy-css | [PyPI](https://pypi.org/project/peasy-css/) | [npm](https://www.npmjs.com/package/peasy-css) | CSS gradients, shadows, borders, flexbox, grid, animations -- [peasycss.com](https://peasycss.com) |
-| peasy-compress | [PyPI](https://pypi.org/project/peasy-compress/) | [npm](https://www.npmjs.com/package/peasy-compress) | ZIP, TAR, gzip, bz2, lzma archive operations -- [peasycompress.com](https://peasycompress.com) |
-| peasy-document | [PyPI](https://pypi.org/project/peasy-document/) | [npm](https://www.npmjs.com/package/peasy-document) | Markdown, HTML, CSV, JSON document conversion -- [peasydocument.com](https://peasydocument.com) |
+| peasy-compress | [PyPI](https://pypi.org/project/peasy-compress/) | [npm](https://www.npmjs.com/package/peasy-compress) | ZIP, TAR, gzip, bz2, lzma archive operations -- [peasytools.com](https://peasytools.com) |
+| peasy-document | [PyPI](https://pypi.org/project/peasy-document/) | [npm](https://www.npmjs.com/package/peasy-document) | Markdown, HTML, CSV, JSON document conversion -- [peasytools.com](https://peasytools.com) |
 | peasy-audio | [PyPI](https://pypi.org/project/peasy-audio/) | -- | Audio convert, trim, merge, normalize, analyze -- [peasyaudio.com](https://peasyaudio.com) |
 | **peasy-video** | [PyPI](https://pypi.org/project/peasy-video/) | -- | **Video trim, resize, extract audio, thumbnails, GIF -- [peasyvideo.com](https://peasyvideo.com)** |
 | peasy-convert | [PyPI](https://pypi.org/project/peasy-convert/) | -- | Unified CLI for all Peasy tools -- [peasytools.com](https://peasytools.com) |
