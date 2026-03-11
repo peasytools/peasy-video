@@ -1,0 +1,86 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "peasy-video"
+version = "0.1.0"
+description = "Video processing made easy — trim, resize, extract audio, thumbnails, GIF conversion, and more. Powered by moviepy."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [{ name = "Peasy Tools" }]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Multimedia :: Video",
+    "Topic :: Multimedia :: Video :: Conversion",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+keywords = [
+    "video",
+    "trim-video",
+    "resize-video",
+    "extract-audio",
+    "thumbnail",
+    "gif",
+    "video-tools",
+    "video-processing",
+    "moviepy",
+    "ffmpeg",
+    "concatenate",
+    "rotate",
+    "peasy",
+]
+dependencies = ["moviepy>=2.0"]
+
+[project.optional-dependencies]
+cli = ["typer>=0.9"]
+dev = ["mypy>=1.10", "pytest>=8.0", "ruff>=0.4"]
+
+[project.scripts]
+peasy-video = "peasy_video.cli:app"
+
+[project.urls]
+Homepage = "https://peasytools.com"
+Repository = "https://github.com/peasytools/peasy-video"
+Issues = "https://github.com/peasytools/peasy-video/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/peasy_video"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "RUF"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+
+[[tool.mypy.overrides]]
+module = ["moviepy", "moviepy.*"]
+ignore_missing_imports = true
+
+[dependency-groups]
+dev = [
+    "mypy>=1.10",
+    "pytest>=8.0",
+    "ruff>=0.4",
+    "typer>=0.9",
+]
