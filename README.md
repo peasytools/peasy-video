@@ -1,6 +1,6 @@
 # peasy-video
 
-[![PyPI](https://img.shields.io/pypi/v/peasy-video)](https://pypi.org/project/peasy-video/)
+[![PyPI version](https://agentgif.com/badge/pypi/peasy-video/version.svg)](https://pypi.org/project/peasy-video/)
 [![Python](https://img.shields.io/pypi/pyversions/peasy-video)](https://pypi.org/project/peasy-video/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
