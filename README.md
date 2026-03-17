@@ -121,7 +121,7 @@ for i, f in enumerate(frames):
         fp.write(f.data)
 ```
 
-Learn more: [PeasyVideo](https://peasyvideo.com) · [Video Glossary](https://peasyvideo.com/glossary/)
+Learn more: [Video Thumbnails Best Practices](https://peasyvideo.com/guides/video-thumbnails-best-practices/) · [What is a Keyframe?](https://peasyvideo.com/glossary/keyframe/) · [What is Frame Rate?](https://peasyvideo.com/glossary/frame-rate/)
 
 ### Trimming and Concatenation
 
@@ -150,7 +150,7 @@ trim("lecture.mp4", "body.mp4", start=120)
 concatenate(["intro.mp4", "main.mp4", "outro.mp4"], "final.mp4")
 ```
 
-Learn more: [PeasyVideo](https://peasyvideo.com) · [Developer Docs](https://peasyvideo.com/developers/)
+Learn more: [How to Trim & Cut Video in Browser](https://peasyvideo.com/guides/how-to-trim-cut-video-browser/) · [What is Trimming?](https://peasyvideo.com/glossary/trimming/) · [What is Muxing?](https://peasyvideo.com/glossary/muxing/)
 
 ### Resize and Transform
 
@@ -191,7 +191,7 @@ reverse_video("jump.mp4", "boomerang.mp4")
 strip_audio("ambient.mp4", "silent_loop.mp4")
 ```
 
-Learn more: [PeasyVideo](https://peasyvideo.com) · [Video Glossary](https://peasyvideo.com/glossary/)
+Learn more: [Video Aspect Ratios & Resolution Guide](https://peasyvideo.com/guides/video-aspect-ratios-resolution-guide/) · [Social Media Video Specs](https://peasyvideo.com/guides/social-media-video-specs/) · [What is Letterboxing?](https://peasyvideo.com/glossary/letterboxing/)
 
 ### Audio Extraction
 
@@ -220,7 +220,7 @@ extract_audio("keynote.mp4", "keynote.aac", format="aac")
 extract_audio("tutorial.mp4", "tutorial.ogg", format="ogg")
 ```
 
-Learn more: [PeasyVideo](https://peasyvideo.com) · [OpenAPI Spec](https://peasyvideo.com/api/openapi.json)
+Learn more: [How to Extract Audio from Video](https://peasyvideo.com/guides/how-to-extract-audio-from-video/) · [What is Transcoding?](https://peasyvideo.com/glossary/transcoding/) · [What is a Container Format?](https://peasyvideo.com/glossary/container-format/)
 
 ### GIF Conversion
 
@@ -251,7 +251,7 @@ video_to_gif("product.mp4", "product.gif", fps=15)
 gif_to_video("animation.gif", "animation.mp4", fps=24)
 ```
 
-Learn more: [PeasyVideo](https://peasyvideo.com) · [Developer Docs](https://peasyvideo.com/developers/)
+Learn more: [GIF Creation & Optimization Guide](https://peasyvideo.com/guides/gif-creation-optimization-guide/) · [How to Create Animated GIFs from Video](https://peasyvideo.com/guides/how-to-create-animated-gifs-from-video/) · [Creating Seamless Video Loops](https://peasyvideo.com/guides/creating-seamless-video-loops/)
 
 ## Understanding Video Codecs and Containers
 
@@ -271,7 +271,7 @@ A codec (coder-decoder) compresses raw video frames into a compact binary stream
 
 H.264 remains the safest choice for maximum compatibility. It plays on virtually every device, browser, and platform manufactured in the last 15 years. H.265 offers significantly better compression (roughly half the bitrate for equivalent quality) but has licensing complexities and narrower browser support. VP9 and AV1 are royalty-free alternatives -- VP9 is widely supported through Chrome and YouTube, while AV1 is the newest codec with the best compression ratios but requires newer hardware for real-time decoding.
 
-Learn more: [PeasyVideo](https://peasyvideo.com) · [Video Glossary](https://peasyvideo.com/glossary/)
+Learn more: [Video Codecs Explained](https://peasyvideo.com/guides/video-codecs-explained/) · [H.264 vs H.265 vs AV1 Comparison](https://peasyvideo.com/guides/h264-vs-h265-vs-av1-comparison/) · [What is H.264?](https://peasyvideo.com/glossary/h264/)
 
 ### Container Formats
 
@@ -288,7 +288,7 @@ A container format is the file format that packages video streams, audio streams
 
 MP4 with H.264 video and AAC audio is the most universally compatible combination. When moviepy writes a video file with a `.mp4` extension, it uses this combination by default through FFmpeg.
 
-Learn more: [PeasyVideo](https://peasyvideo.com) · [Developer Docs](https://peasyvideo.com/developers/)
+Learn more: [Video Container Formats Explained](https://peasyvideo.com/guides/video-container-formats-explained/) · [Video Containers vs Codecs Explained](https://peasyvideo.com/guides/video-containers-vs-codecs-explained/) · [What is a Video Codec?](https://peasyvideo.com/glossary/video-codec/)
 
 ### Resolution Standards
 
@@ -306,7 +306,7 @@ Video resolution defines the pixel dimensions of each frame. Higher resolution m
 
 The "p" in 720p/1080p stands for "progressive scan" (every frame is a full image), as opposed to the older interlaced scan (1080i) used in broadcast television.
 
-Learn more: [PeasyVideo](https://peasyvideo.com) · [Video Glossary](https://peasyvideo.com/glossary/)
+Learn more: [Video Aspect Ratios & Platform Guide](https://peasyvideo.com/guides/video-aspect-ratios-platform-guide/) · [What is Interlacing?](https://peasyvideo.com/glossary/interlacing/) · [What is Deinterlacing?](https://peasyvideo.com/glossary/deinterlacing/)
 
 ### Frame Rates
 
@@ -325,7 +325,7 @@ Frame rate (frames per second, fps) determines how many individual images are di
 
 When using `video_to_gif()`, reducing the fps from 30 to 10-12 dramatically shrinks GIF file sizes while maintaining acceptable visual quality for most use cases.
 
-Learn more: [PeasyVideo](https://peasyvideo.com) · [OpenAPI Spec](https://peasyvideo.com/api/openapi.json)
+Learn more: [Frame Rate Guide: 24, 30, 60 fps](https://peasyvideo.com/guides/frame-rate-guide-24-30-60-fps/) · [What is Frame Rate?](https://peasyvideo.com/glossary/frame-rate/) · [What is CFR?](https://peasyvideo.com/glossary/cfr/)
 
 ### Aspect Ratios
 
@@ -342,7 +342,7 @@ Aspect ratio is the proportional relationship between a video's width and height
 
 When resizing with `resize()`, specifying only `width` or only `height` preserves the original aspect ratio automatically. Specifying both forces exact dimensions, which may stretch the video if the aspect ratio differs.
 
-Learn more: [PeasyVideo](https://peasyvideo.com) · [Developer Docs](https://peasyvideo.com/developers/)
+Learn more: [Instagram vs TikTok vs YouTube Shorts](https://peasyvideo.com/guides/instagram-vs-tiktok-vs-youtube-shorts/) · [What is Pillarboxing?](https://peasyvideo.com/glossary/pillarboxing/) · [What is Letterboxing?](https://peasyvideo.com/glossary/letterboxing/)
 
 ## Command-Line Interface
 
@@ -452,10 +452,10 @@ Available video tools: `video_info`, `video_trim`, `video_resize`, `video_extrac
 
 ## Learn More About Video Processing
 
-- **Tools**: [Video Trimmer](https://peasyvideo.com/video/video-trimmer/) · [Video Resizer](https://peasyvideo.com/video/video-resizer/) · [GIF Converter](https://peasyvideo.com/video/gif-converter/) · [All Video Tools](https://peasyvideo.com/)
-- **Guides**: [Video Compression Guide](https://peasyvideo.com/guides/) · [GIF Creation Guide](https://peasyvideo.com/guides/) · [All Guides](https://peasyvideo.com/guides/)
-- **Glossary**: [Codec](https://peasyvideo.com/glossary/) · [Frame Rate](https://peasyvideo.com/glossary/frame-rate/) · [All Terms](https://peasyvideo.com/glossary/)
-- **Formats**: [MP4](https://peasyvideo.com/formats/mp4/) · [WebM](https://peasyvideo.com/formats/webm/) · [GIF](https://peasyvideo.com/formats/gif/) · [All Formats](https://peasyvideo.com/formats/)
+- **Tools**: [Video Resolution Calculator](https://peasyvideo.com/video/video-resolution/) · [Video Bitrate Calculator](https://peasyvideo.com/video/video-bitrate/) · [Video Framerate Converter](https://peasyvideo.com/video/video-framerate/) · [Video Aspect Ratio Calculator](https://peasyvideo.com/video/video-aspect-ratio/) · [Video File Size Calculator](https://peasyvideo.com/video/video-filesize/) · [Video Speed Calculator](https://peasyvideo.com/video/video-speed/) · [All Video Tools](https://peasyvideo.com/)
+- **Guides**: [Video Codecs Explained](https://peasyvideo.com/guides/video-codecs-explained/) · [Video Compression for Web Delivery](https://peasyvideo.com/guides/video-compression-web-delivery/) · [GIF Creation & Optimization Guide](https://peasyvideo.com/guides/gif-creation-optimization-guide/) · [H.264 vs H.265 vs AV1 Comparison](https://peasyvideo.com/guides/h264-vs-h265-vs-av1-comparison/) · [Video Thumbnails Best Practices](https://peasyvideo.com/guides/video-thumbnails-best-practices/) · [Social Media Video Specs](https://peasyvideo.com/guides/social-media-video-specs/) · [How to Extract Audio from Video](https://peasyvideo.com/guides/how-to-extract-audio-from-video/) · [All Guides](https://peasyvideo.com/guides/)
+- **Glossary**: [H.264](https://peasyvideo.com/glossary/h264/) · [H.265](https://peasyvideo.com/glossary/h265/) · [AV1](https://peasyvideo.com/glossary/av1/) · [Frame Rate](https://peasyvideo.com/glossary/frame-rate/) · [Container Format](https://peasyvideo.com/glossary/container-format/) · [Keyframe](https://peasyvideo.com/glossary/keyframe/) · [Transcoding](https://peasyvideo.com/glossary/transcoding/) · [Color Grading](https://peasyvideo.com/glossary/color-grading/) · [GOP](https://peasyvideo.com/glossary/gop/) · [All Terms](https://peasyvideo.com/glossary/)
+- **Formats**: [MP4](https://peasyvideo.com/formats/mp4/) · [WebM](https://peasyvideo.com/formats/webm/) · [MKV](https://peasyvideo.com/formats/mkv/) · [AVI](https://peasyvideo.com/formats/avi/) · [MOV](https://peasyvideo.com/formats/mov/) · [GIF](https://peasyvideo.com/formats/gif/) · [All Formats](https://peasyvideo.com/formats/)
 - **API**: [REST API Docs](https://peasyvideo.com/developers/) · [OpenAPI Spec](https://peasyvideo.com/api/openapi.json)
 
 ## Also Available
