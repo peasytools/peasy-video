@@ -452,9 +452,9 @@ Available video tools: `video_info`, `video_trim`, `video_resize`, `video_extrac
 
 ## Learn More About Video Processing
 
-- **Tools**: [Video Trimmer](https://peasyvideo.com/tools/video-trimmer/) · [Video Resizer](https://peasyvideo.com/tools/video-resizer/) · [GIF Converter](https://peasyvideo.com/tools/gif-converter/) · [All Video Tools](https://peasyvideo.com/)
-- **Guides**: [Video Compression Guide](https://peasyvideo.com/guides/video-compression/) · [GIF Creation Guide](https://peasyvideo.com/guides/gif-creation/) · [All Guides](https://peasyvideo.com/guides/)
-- **Glossary**: [Codec](https://peasyvideo.com/glossary/codec/) · [Frame Rate](https://peasyvideo.com/glossary/frame-rate/) · [All Terms](https://peasyvideo.com/glossary/)
+- **Tools**: [Video Trimmer](https://peasyvideo.com/video/video-trimmer/) · [Video Resizer](https://peasyvideo.com/video/video-resizer/) · [GIF Converter](https://peasyvideo.com/video/gif-converter/) · [All Video Tools](https://peasyvideo.com/)
+- **Guides**: [Video Compression Guide](https://peasyvideo.com/guides/) · [GIF Creation Guide](https://peasyvideo.com/guides/) · [All Guides](https://peasyvideo.com/guides/)
+- **Glossary**: [Codec](https://peasyvideo.com/glossary/) · [Frame Rate](https://peasyvideo.com/glossary/frame-rate/) · [All Terms](https://peasyvideo.com/glossary/)
 - **Formats**: [MP4](https://peasyvideo.com/formats/mp4/) · [WebM](https://peasyvideo.com/formats/webm/) · [GIF](https://peasyvideo.com/formats/gif/) · [All Formats](https://peasyvideo.com/formats/)
 - **API**: [REST API Docs](https://peasyvideo.com/developers/) · [OpenAPI Spec](https://peasyvideo.com/api/openapi.json)
 
