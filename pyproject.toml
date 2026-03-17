@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "peasy-video"
-version = "0.1.1"
+version = "0.2.0"
 description = "Video processing made easy — trim, resize, extract audio, thumbnails, GIF conversion, and more. Powered by moviepy."
 readme = "README.md"
 license = "MIT"
