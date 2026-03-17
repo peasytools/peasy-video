@@ -3,6 +3,7 @@
 [![PyPI version](https://agentgif.com/badge/pypi/peasy-video/version.svg)](https://pypi.org/project/peasy-video/)
 [![Python](https://img.shields.io/pypi/pyversions/peasy-video)](https://pypi.org/project/peasy-video/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![GitHub stars](https://agentgif.com/badge/github/peasytools/peasy-video/stars.svg)](https://github.com/peasytools/peasy-video)
 
 Python video toolkit -- 13 operations for trimming, resizing, rotating, speed adjustment, audio extraction, thumbnail generation, GIF conversion, concatenation, and more. Powered by [moviepy](https://zulko.github.io/moviepy/) and [FFmpeg](https://ffmpeg.org/). Every function accepts a file path and returns a `Path` or dataclass result, so you can chain operations and integrate them into any pipeline. Handles MP4, WebM, MKV, AVI, MOV, and any container format supported by FFmpeg.
 
