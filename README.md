@@ -12,7 +12,7 @@ Built for [peasyvideo.com](https://peasyvideo.com), which offers free interactiv
 > **Try the interactive tools at [peasyvideo.com](https://peasyvideo.com)** -- video trimming, resizing, audio extraction, GIF conversion, and thumbnail generation.
 
 <p align="center">
-  <img src="demo.gif" alt="peasy-video demo — video operations and dataclass fields in Python REPL" width="800">
+  <a href="https://agentgif.com/rfAp24Z4"><img src="https://media.agentgif.com/rfAp24Z4.gif" alt="peasy-video demo — video operations and dataclass fields in Python REPL" width="800"></a>
 </p>
 
 ## Table of Contents
